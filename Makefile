@@ -1,5 +1,6 @@
 site:
 	./makesite.py
+	chown -R www-data:www-data _site
 
 serve: site
 	cd _site && python -m SimpleHTTPServer 2> /dev/null || python3 -m http.server

@@ -168,9 +168,9 @@ def main():
     # Default parameters.
     params = {
         'base_path': '',
-        'subtitle': 'Lorem Ipsum',
+        'subtitle': 'Domainologic',
         'author': 'Admin',
-        'site_url': 'http://localhost:8000',
+        'site_url': 'http://domainologic.fr',
         'current_year': datetime.datetime.now().year
     }
 

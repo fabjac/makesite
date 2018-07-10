@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="achat de noms de domaine">
+    <meta name="author" content="">
     <title>{{ title }} - {{ subtitle }}</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="{{ base_path }}/css/style.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59186135-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-59186135-12');
+  </script>
+
 </head>
 
 <body id="{{ slug }}">
@@ -29,11 +42,9 @@
 
 <footer>
 <section>
-<p>&copy; {{ current_year }} Lorem Ipsum</p>
+<p>&copy; {{ current_year }} Domainologic</p>
 <p>
-    <a href="https://twitter.com/sunainapai">Twitter</a>
-    <a href="https://github.com/sunainapai">GitHub</a>
-    <a href="https://www.example.com/">Example</a>
+    <a href="https://twitter.com/Domainologic">Twitter</a>
 </p>
 </section>
 </footer>
