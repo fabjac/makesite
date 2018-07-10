@@ -167,7 +167,7 @@ def main():
 
     # Default parameters.
     params = {
-        'base_path': '',
+        'base_path': 'http://domainologic.fr',
         'subtitle': 'Domainologic',
         'author': 'Admin',
         'site_url': 'http://domainologic.fr',
