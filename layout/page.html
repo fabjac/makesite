@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,15 @@
     <meta name="description" content="achat de noms de domaine">
     <meta name="author" content="">
     <title>{{ title }} - {{ subtitle }}</title>
-    <link rel="stylesheet" type="text/css" href="{{ base_path }}/css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59186135-12"></script>
@@ -21,33 +29,50 @@
 </head>
 
 <body id="{{ slug }}">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href=".">
+                    <img alt="Domainologic" src="logo-shapes-only.png" width="90" />
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://twitter.com/domainologic" target="_blank">Suivez @Domainologic</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ base_path }}/contact/">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ base_path }}/about/">About</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-<nav>
-<section>
-    <span class="home">
-        <a href="{{ base_path }}/">Home</a>
-    </span>
-    <span class="links">
-        <a href="{{ base_path }}/blog/">Blog</a>
-        <a href="{{ base_path }}/news/">News</a>
-        <a href="{{ base_path }}/contact/">Contact</a>
-        <a href="{{ base_path }}/about/">About</a>
-    </span>
-</section>
-</nav>
+    <!-- Page Content -->
+    <div class="container">
+      {{ content }}
+    </div>
+    <!-- /.container -->
 
-<main>
-{{ content }}
-</main>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<footer>
-<section>
-<p>&copy; {{ current_year }} Domainologic</p>
-<p>
-    <a href="https://twitter.com/Domainologic">Twitter</a>
-</p>
-</section>
-</footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-</body>
+  </body>
+
 </html>
